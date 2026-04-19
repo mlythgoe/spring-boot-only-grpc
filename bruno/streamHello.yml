@@ -1,0 +1,14 @@
+info:
+  name: streamHello
+  type: grpc
+  seq: 2
+
+grpc:
+  url: http://localhost:9090
+  method: /Simple/StreamHello
+  methodType: server-streaming
+  message: |-
+    {
+      "name": "Mike"
+    }
+  auth: inherit

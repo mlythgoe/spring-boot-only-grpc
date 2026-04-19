@@ -1,0 +1,14 @@
+info:
+  name: sayHello
+  type: grpc
+  seq: 1
+
+grpc:
+  url: http://localhost:9090
+  method: /Simple/SayHello
+  methodType: unary
+  message: |-
+    {
+      "name": "Mike"
+    }
+  auth: inherit
