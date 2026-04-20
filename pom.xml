@@ -2,23 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>4.0.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>net.mikelythgoe</groupId>
     <artifactId>spring-boot-only-grpc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-only-grpc</name>
     <description>spring-boot-only-grpc</description>
+
     <properties>
         <java.version>25</java.version>
         <grpc.version>1.77.1</grpc.version>
         <protobuf-java.version>4.33.4</protobuf-java.version>
         <spring-grpc.version>1.0.2</spring-grpc.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.grpc</groupId>
@@ -39,6 +43,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
