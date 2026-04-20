@@ -8,7 +8,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
 
 @Service
-class GrpcServerService extends net.mikelythgoe.springbootonlygrpc.proto.SimpleGrpc.SimpleImplBase {
+class GrpcServerService extends net.mikelythgoe.springbootonlygrpc.proto.HelloServiceGrpc.HelloServiceImplBase {
 
     private static final Log log = LogFactory.getLog(GrpcServerService.class);
 
