@@ -13,19 +13,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-only-grpc</name>
     <description>spring-boot-only-grpc</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
     <properties>
         <java.version>25</java.version>
         <grpc.version>1.77.1</grpc.version>
@@ -34,14 +21,13 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-services</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.grpc</groupId>
             <artifactId>spring-grpc-server-spring-boot-starter</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-services</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
