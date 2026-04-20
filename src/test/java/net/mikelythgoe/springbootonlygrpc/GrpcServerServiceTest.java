@@ -39,7 +39,7 @@ class GrpcServerServiceTest {
             service.sayHello(request, responseObserver);
 
             assertEquals(1, responseObserver.getValues().size());
-            assertEquals("Hello ==> World", responseObserver.getValues().get(0).getMessage());
+            assertEquals("Hello ==> World", responseObserver.getValues().getFirst().getMessage());
             assertTrue(responseObserver.isCompleted());
             assertNull(responseObserver.getError());
         }
@@ -84,7 +84,7 @@ class GrpcServerServiceTest {
 
             service.sayHello(request, responseObserver);
 
-            assertEquals("Hello ==> ", responseObserver.getValues().get(0).getMessage());
+            assertEquals("Hello ==> ", responseObserver.getValues().getFirst().getMessage());
             assertTrue(responseObserver.isCompleted());
         }
     }
