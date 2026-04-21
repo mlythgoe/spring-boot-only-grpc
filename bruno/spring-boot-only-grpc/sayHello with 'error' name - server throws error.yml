@@ -1,0 +1,14 @@
+info:
+  name: sayHello with 'error' name - server throws error
+  type: grpc
+  seq: 3
+
+grpc:
+  url: http://localhost:9090
+  method: /HelloService/SayHello
+  methodType: unary
+  message: |-
+    {
+      "name": "error"
+    }
+  auth: inherit

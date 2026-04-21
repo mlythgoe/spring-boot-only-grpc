@@ -1,0 +1,14 @@
+info:
+  name: sayHello with 'internal' name - server throws error
+  type: grpc
+  seq: 2
+
+grpc:
+  url: http://localhost:9090
+  method: /HelloService/SayHello
+  methodType: unary
+  message: |-
+    {
+      "name": "internal"
+    }
+  auth: inherit

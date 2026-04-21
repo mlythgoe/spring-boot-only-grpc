@@ -1,12 +1,12 @@
 info:
-  name: sayHello
+  name: streamHello
   type: grpc
-  seq: 1
+  seq: 2
 
 grpc:
   url: http://localhost:9090
-  method: /Simple/SayHello
-  methodType: unary
+  method: /HelloService/StreamHello
+  methodType: server-streaming
   message: |-
     {
       "name": "Mike"

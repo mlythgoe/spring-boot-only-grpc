@@ -1,0 +1,10 @@
+opencollection: 1.0.0
+
+info:
+  name: spring-boot-only-grpc
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
