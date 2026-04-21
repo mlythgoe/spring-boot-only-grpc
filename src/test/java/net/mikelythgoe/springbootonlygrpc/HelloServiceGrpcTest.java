@@ -15,13 +15,13 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class GrpcServerServiceTest {
+class HelloServiceGrpcTest {
 
-    private GrpcServerService service;
+    private HelloServiceGrpc service;
 
     @BeforeEach
     void setUp() {
-        service = new GrpcServerService();
+        service = new HelloServiceGrpc();
     }
 
     @Nested

@@ -8,9 +8,9 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
 
 @Service
-class GrpcServerService extends net.mikelythgoe.springbootonlygrpc.proto.HelloServiceGrpc.HelloServiceImplBase {
+class HelloServiceGrpc extends net.mikelythgoe.springbootonlygrpc.proto.HelloServiceGrpc.HelloServiceImplBase {
 
-    private static final Log log = LogFactory.getLog(GrpcServerService.class);
+    private static final Log log = LogFactory.getLog(HelloServiceGrpc.class);
 
     @Override
     public void sayHello(HelloRequest req, StreamObserver<HelloReply> responseObserver) {
